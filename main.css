@@ -1,38 +1,58 @@
  body{
-    background-color: yellow
+    background-image: url("space.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 } 
-a:hover {
-    background-color: yellow;
-  }
+
 
   img{
       width: 50px;
       height: 50px;
-      display: block; 
+      
+      
   }
   .codeNation{
-      width:200px;
-      height: 50px;
+      width:250px;
+      height: 40px;
       display: block; 
+      padding-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
   }
 
-  .insta:hover{
-    cursor: default; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
+  .star{
+    position: absolute;
+    top:100px;
+    left: 0px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
+
+  @keyframes move{
+    from{transform: translateX(-100px)}
+    to{transform: translateX(2000px)}
+  }
+
+.insta{
+  align-content: center;
+  margin-left: 850px;
+  margin-top: 700px;
+  padding-left: 10px;
+}
+
+  .insta:hover{
+    cursor: pointer; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
+}
+
   .codeNation:hover{
-    cursor: default; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
+    cursor: pointer; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
   }
   .twitter:hover{
-    cursor: default; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
+    cursor: pointer; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
   }
   .fb:hover{
-    cursor: default; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
+    cursor: pointer; transform: rotate(360deg); transition: all 0.3s ease-in-out 0s
   }
-  .square{
-      width: 300px;
-      height: 300px;
-      background-color: red;
-  }
-  .square:hover{
-      border-radius: 50%
-  }
+    
